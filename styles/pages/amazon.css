@@ -3,6 +3,7 @@
 }
 
 .products-grid {
+
   display: grid;
 
   /* - In CSS Grid, 1fr means a column will take up the
@@ -31,13 +32,13 @@
    less, we will divide the grid into 6 columns. */
 @media (max-width: 1600px) {
   .products-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 1300px) {
   .products-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -66,10 +67,11 @@
 }
 
 .product-container {
-  padding-top: 40px;
+  /* padding-top: 40px;
   padding-bottom: 25px;
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 25px; */
+  padding: 2.5rem 1rem 1.5rem;
 
   border-right: 1px solid rgb(231, 231, 231);
   border-bottom: 1px solid rgb(231, 231, 231);
@@ -107,7 +109,7 @@
 }
 
 .product-rating-stars {
-  width: 100px;
+  width: 5rem;
   margin-right: 6px;
 }
 
